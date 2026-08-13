@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sujet Examen ML — Atlantic Haven Hotels</title>
+  <style>
+    :root{--ink:#38241f;--orange:#e77a22;--cream:#fff8ee;--line:#eadfd8;--muted:#715f58;--navy:#263548;--green:#4f8c48;--violet:#79537c}
+    *{box-sizing:border-box} body{margin:0;background:#f6f3f1;color:#352d2a;font-family:Inter,Segoe UI,Arial,sans-serif;font-size:15px;line-height:1.55}
+    header{background:linear-gradient(120deg,#402721,#5a3328);color:#fff;border-bottom:5px solid var(--orange)}
+    .hero{max-width:1050px;margin:auto;padding:23px 24px 25px;position:relative}.eyebrow{color:#f5bc7e;text-transform:uppercase;letter-spacing:.13em;font-weight:800;font-size:11px}.hero h1{margin:4px 0 0;font-size:32px;line-height:1.15}.hero p{margin:5px 0 0;color:#eaded9}.duration{position:absolute;right:24px;top:31px;border:1px solid #8f6556;border-radius:999px;padding:7px 13px;background:#321d18;font-size:12px}
+    main{max-width:920px;margin:28px auto 40px;padding:0 18px}.card{background:#fff;border:1px solid var(--line);border-radius:9px;margin:0 0 20px;box-shadow:0 3px 10px #40251a12;overflow:hidden}.card-head{display:flex;align-items:center;gap:10px;padding:13px 17px;font-weight:800;font-size:18px;border-bottom:1px solid var(--line)}.card-body{padding:18px}.brown .card-head{background:#f1ece9}.orange{border-color:#f3d7b6}.orange .card-head{background:#fff0dc;color:#c65c09}.green{border-color:#cfe5c9}.green .card-head{background:#edf7ea;color:#39723b}.violet .card-head{background:#f1ebf2;color:#68436c}
+    h3{font-size:14px;text-transform:uppercase;letter-spacing:.04em;color:#734a3c;margin:18px 0 8px}h3:first-child{margin-top:0}p{margin:7px 0 12px}code{background:#f4eeeb;color:#b24b20;padding:2px 5px;border-radius:4px;font-weight:700}.mission{border-left:4px solid #d84933;background:#fff7f5;padding:12px 14px;margin:13px 0}.mission strong{display:block;color:#c73d28;text-transform:uppercase;font-size:12px;margin-bottom:4px}
+    .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}.fact{background:#f8f6f5;border:1px solid #e9e3e0;border-radius:5px;padding:11px}.fact b{display:block;font-size:12px;color:#7b6259}.downloads{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.download{text-decoration:none;color:#5a3a2d;border:1px solid #eed8c6;background:#fff;border-radius:6px;text-align:center;padding:18px 9px;font-weight:800}.download span{display:block;color:#9b8175;font-weight:500;font-size:11px;margin-top:4px}.download:hover{transform:translateY(-2px);box-shadow:0 5px 14px #4a2d1d18}.ico{display:block;font-size:23px;color:var(--orange);margin-bottom:7px}
+    table{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px}th{text-align:left;background:#f6f1ed;color:#69463a}th,td{padding:8px 9px;border-bottom:1px solid #eee6e1}tr:last-child td{border-bottom:0}.hint{margin-top:14px;background:#fff5d9;border-left:4px solid #e0a420;padding:11px 13px;color:#614b18}
+    .step{background:#fffdf7;border:1px solid #f0e6d4;border-left:4px solid #e3b33e;border-radius:4px;padding:10px 12px;margin:10px 0}.step b{color:#b77b00;text-transform:uppercase;font-size:12px}.deliverable{border-bottom:1px solid #eee8e5;padding:13px 0}.deliverable:last-child{border-bottom:0}.deliverable h4{margin:0 0 4px;font-size:14px}.code{background:var(--navy);color:#d7f0e1;border-radius:5px;padding:14px 16px;overflow:auto;font:12px/1.55 Consolas,monospace;margin:9px 0}.criteria{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.criterion{display:flex;justify-content:space-between;padding:11px;border-radius:5px;font-weight:700;font-size:13px}.criterion:nth-child(1){background:#edf7e9;color:#3b7138}.criterion:nth-child(2){background:#fff4d8;color:#9a6700}.criterion:nth-child(3){background:#f4ecf5;color:#6a436f}.criterion:nth-child(4){background:#eaf1f7;color:#3c5d78}.criterion:nth-child(5){background:#f8e8ed;color:#82485b}.criterion:nth-child(6){background:#eeeae8;color:#5e504b}
+    .warning{font-weight:700;color:#a43a28}.small{font-size:12px;color:var(--muted)}footer{text-align:center;color:#8f7f78;font-size:12px;padding:8px 20px 30px}
+    @media(max-width:760px){.duration{position:static;display:inline-block;margin-top:13px}.downloads{grid-template-columns:1fr 1fr}.facts{grid-template-columns:1fr}.criteria{grid-template-columns:1fr}.hero h1{font-size:27px}}
+    @media print{body{background:white;font-size:12px}.hero,main{max-width:none}.card{box-shadow:none;break-inside:avoid}.download{padding:10px}.duration{position:absolute}a{color:inherit}}
+  </style>
+</head>
+<body>
+<header><div class="hero">
+  <div class="eyebrow">ISPM — Institut Supérieur Polytechnique de Madagascar</div>
+  <h1>🏨 Atlantic Haven Hotels</h1>
+  <p>Hackathon Machine Learning &amp; Data Science — M1</p>
+  <div class="duration">⏱ Durée : 8 heures (08h–16h)</div>
+</div></header>
+
+<main>
+  <section class="card brown"><div class="card-head">🏢 1. Contexte et organisation</div><div class="card-body">
+    <h3>À propos d’Atlantic Haven Hotels</h3>
+    <p><strong>Atlantic Haven Hotels</strong> exploite des établissements dans dix régions italiennes. Son activité couvre des destinations urbaines, culturelles, balnéaires, rurales, montagneuses et insulaires. Les réservations proviennent de plusieurs canaux et présentent des comportements très différents selon la saison, le séjour et les conditions commerciales.</p>
+    <div class="mission"><strong>🛡 Mission critique</strong>Une annulation tardive peut laisser une chambre inoccupée et perturber la planification. Votre mission est de construire un modèle capable de prédire la cible <code>reservation_annulee</code>, sans pénaliser inutilement les clients susceptibles de maintenir leur séjour.</div>
+    <p>Le modèle devra fournir une <strong>probabilité d’annulation</strong> et une <strong>décision binaire</strong>. Vous devrez expliquer les compromis entre faux positifs et faux négatifs.</p>
+    <div class="facts"><div class="fact"><b>Durée</b>8 heures — 08h00 à 16h00</div><div class="fact"><b>Modalité</b>Distanciel complet</div><div class="fact"><b>Deadline</b>16h00 précises — dernier commit</div></div>
+  </div></section>
+
+  <section class="card orange"><div class="card-head">🗃 2. Description du dataset</div><div class="card-body">
+    <h3>Fichiers requis</h3>
+    <div class="downloads">
+      <a class="download" href="ressources/reservations_train.csv"><i class="ico">⬇</i>reservations_train.csv<span>Entraînement — 8 000 lignes</span></a>
+      <a class="download" href="ressources/reservations_test.csv"><i class="ico">🧪</i>reservations_test.csv<span>Test — 2 000 lignes, sans cible</span></a>
+      <a class="download" href="ressources/data_dictionary.csv"><i class="ico">📖</i>data_dictionary.csv<span>Description des variables</span></a>
+      <a class="download" href="ressources/readme-model.md"><i class="ico">📝</i>readme-model.md<span>Canevas du rapport</span></a>
+    </div>
+    <h3>Variables principales</h3>
+    <table><thead><tr><th>Groupe</th><th>Exemples</th><th>Rôle</th></tr></thead><tbody>
+      <tr><td>Identifiants et dates</td><td><code>reservation_id</code>, <code>date_reservation</code>, <code>date_arrivee</code></td><td>Traçabilité et dimension temporelle</td></tr>
+      <tr><td>Destination</td><td><code>region_hotel</code>, <code>ville</code>, <code>type_destination</code></td><td>Contexte touristique</td></tr>
+      <tr><td>Séjour</td><td><code>nuits</code>, <code>adultes</code>, <code>enfants</code>, <code>chambres</code></td><td>Composition de la réservation</td></tr>
+      <tr><td>Commercial</td><td><code>canal_reservation</code>, <code>type_acompte</code>, <code>tarif_remboursable</code></td><td>Conditions de vente</td></tr>
+      <tr><td>Prix</td><td><code>prix_moyen_nuit_eur</code>, <code>remise_pct</code>, <code>montant_total_eur</code></td><td>Valeur économique</td></tr>
+      <tr><td>Historique</td><td><code>reservations_passees</code>, <code>annulations_passees</code></td><td>Relation antérieure</td></tr>
+      <tr><td>Cible</td><td><code>reservation_annulee</code></td><td>0 = maintenue, 1 = annulée</td></tr>
+    </tbody></table>
+    <div class="hint">💡 <strong>Indice crucial :</strong> les fichiers sont ordonnés dans le temps et le test représente des réservations plus récentes. Votre protocole de validation doit respecter cette réalité.</div>
+    <p class="small">Les données sont entièrement synthétiques. Les différences régionales décrivent des contextes touristiques, saisonniers et opérationnels, et non des caractéristiques intrinsèques des populations.</p>
+  </div></section>
+
+  <section class="card green"><div class="card-head">🎯 3. Votre mission</div><div class="card-body">
+    <p>Votre objectif est de construire une solution reproductible, de maximiser le <strong>F1-score</strong> sur la classe « annulation » et de démontrer que votre modèle reste pertinent sur des données plus récentes.</p>
+    <div class="step"><b>Étape 1 — EDA et préparation</b><br>Analysez la cible, les valeurs manquantes, les distributions, les catégories, les valeurs atypiques et les relations temporelles. Justifiez les traitements appliqués.</div>
+    <div class="step"><b>Étape 2 — Baseline obligatoire</b><br>Construisez d’abord une <strong>régression logistique</strong>. Tous les prétraitements doivent être appris uniquement à partir des données d’entraînement.</div>
+    <div class="step"><b>Étape 3 — Validation et modélisation</b><br>Adoptez une validation cohérente avec l’ordre temporel. Comparez au moins deux autres familles de modèles et justifiez vos métriques, votre réglage et votre seuil de décision.</div>
+    <div class="step"><b>Étape 4 — Feature engineering</b><br>Créez des variables pertinentes à partir des dates, du séjour, du prix ou de l’historique. Évitez toute fuite de cible. Un gain doit être démontré expérimentalement.</div>
+    <div class="step"><b>Étape 5 — Interprétation et erreurs</b><br>Analysez les variables importantes, les faux positifs et les faux négatifs. Proposez une utilisation opérationnelle raisonnable des probabilités produites.</div>
+    <div class="step"><b>Étape 6 — Soumission</b><br>Générez <code>submission.csv</code> à partir de <code>reservations_test.csv</code>, sans modifier l’ordre des identifiants.</div>
+  </div></section>
+
+  <section class="card violet"><div class="card-head">📦 4. Livrables — deadline 16h00</div><div class="card-body">
+    <p class="warning">Tout doit être poussé sur votre dépôt GitHub avant 16h00. Le dernier commit antérieur à la deadline fera foi.</p>
+    <div class="deliverable"><h4>📊 1. <code>submission.csv</code></h4><p>Le fichier doit contenir exactement trois colonnes : <code>reservation_id</code>, <code>probabilite_annulation</code> et <code>reservation_annulee</code>.</p>
+      <div class="code">submission = pd.DataFrame({
+    "reservation_id": test_df["reservation_id"],
+    "probabilite_annulation": model.predict_proba(X_test)[:, 1],
+    "reservation_annulee": predictions
+})
+submission.to_csv("submission.csv", index=False)</div>
+    </div>
+    <div class="deliverable"><h4>🎥 2. Vidéo de présentation — 3 à 5 minutes</h4><p>Présentez l’équipe, les constats majeurs de l’EDA, la baseline, le modèle final, les erreurs importantes et votre recommandation métier.</p></div>
+    <div class="deliverable"><h4>💻 3. Code et notebook</h4><p>Le notebook doit être structuré, commenté, reproductible et exécutable de bout en bout. Fixez les graines aléatoires.</p></div>
+    <div class="deliverable"><h4>📝 4. Rapport <code>README.md</code></h4><p>Utilisez le canevas fourni. Chaque choix majeur doit être justifié par un résultat ou une observation.</p></div>
+  </div></section>
+
+  <section class="card"><div class="card-head">5. Critères d’évaluation</div><div class="card-body"><div class="criteria">
+    <div class="criterion"><span>📈 Performance — F1-score</span><b>30 %</b></div>
+    <div class="criterion"><span>🧪 Méthodologie et validation</span><b>20 %</b></div>
+    <div class="criterion"><span>⚙ Feature engineering</span><b>15 %</b></div>
+    <div class="criterion"><span>💻 Qualité du code</span><b>15 %</b></div>
+    <div class="criterion"><span>📝 Analyse et README</span><b>10 %</b></div>
+    <div class="criterion"><span>🎥 Présentation</span><b>10 %</b></div>
+  </div></div></section>
+</main>
+<footer>© 2026 Atlantic Haven Hotels — ISPM — Données synthétiques à usage pédagogique</footer>
+</body></html>
