@@ -2,7 +2,7 @@
 
 ## **Examen Final Machine Learning & Data Science — M1**
 
-Réalisé au sein de **ISPM — Madagascar** ([www.ispm-edu.com](https://www.ispm-edu.com))
+Réalisé au sein de [**ISPM — Madagascar**](https://www.ispm-edu.com)
 
 ---
 
@@ -189,4 +189,4 @@ Le modèle Random Forest final atteint un F1 de 0,4755 sur la classe "annulation
 - Assistant IA (Claude, Anthropic) utilisé pour la construction du pipeline de prétraitement, la comparaison de modèles, la recherche du seuil de décision optimal et la rédaction assistée de ce rapport à partir des résultats réellement obtenus sur les données du projet.
 
 - Référence 1 : scikit-learn
-- Référence 2 : claude.ai ([www.claude.ai](https://www.claude.ai))
+- Référence 2 : [Claude AI](https://www.claude.ai)
